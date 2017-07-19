@@ -1,0 +1,15 @@
+body{
+	font-family: Roboto;
+	justify-content: center;
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+}
+
+.gifton{
+	font-size: 150px;
+	color: #9DC9AC;
+}
+
+.gifton span{
+	color: black;
+}

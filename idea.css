@@ -1,0 +1,91 @@
+body{
+	font-family: Roboto;
+	text-align: center;
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+}
+
+
+html{
+	background: #99B898; 
+}
+
+.poster {
+	width: 320px;
+	height: 500px;
+
+	position: absolute;
+	top: 50%; left: 50%;
+	margin: -250px 0 0 -160px;
+	border-radius: 100px;
+	box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+	margin-top: 200px;
+}
+
+.img{
+	height: 300px;
+	width: 320px;
+}
+
+
+div[class*="layer-"] {
+	position: absolute;
+	top: -10px; left: -10px;
+	right: -10px; bottom: -10px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	transition:0.1s;
+}
+
+.layer-1 {
+background-image: url('glow.jpg');
+}
+.layer-2 {
+background-image: url('glow.jpg');
+}
+.layer-3 {
+top: 0; bottom: 0;
+left: 0; right: 0;
+background-image: url('glow.jpg');
+}
+.layer-4 {
+background-image: url('glow.jpg');
+}
+.layer-5 {
+background-image: url('glow.jpg');
+}
+
+.shine {
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+background: linear-gradient(90deg, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 60%);
+z-index: 100;
+}
+
+.test{
+	border: solid red 8px;
+	width: 350px;
+	height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
