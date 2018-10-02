@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="445px" height="445px" viewBox="0 0 445 445" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>gifton-logo@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gifton-logo">
+            <circle id="Oval-2" fill="#98B9C9" cx="222.5" cy="222.5" r="222.5"></circle>
+            <path d="M233,405.984239 L233,250 L420,250 C405.685281,338.442367 328.513555,406 235.460526,406 C234.639103,406 233.818916,405.994736 233,405.984239 Z" id="Combined-Shape" fill="#5E737D"></path>
+            <path d="M-59,301 C-44.7659127,212.557633 31.9711208,145 124.5,145 C217.028879,145 293.765913,212.557633 308,301 L-59,301 Z" id="Combined-Shape" stroke="#95EFE7" stroke-width="12" fill="#95EFE7" transform="translate(124.500000, 223.000000) rotate(-90.000000) translate(-124.500000, -223.000000) "></path>
+        </g>
+    </g>
+</svg>
