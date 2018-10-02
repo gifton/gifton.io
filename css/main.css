@@ -1,174 +1,139 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400');
-
-body {
-	background: #F8F8F8;
-	display: flex;
-	font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.content-wrapper {
-	width: 500px;
-	margin: 0 auto;
-}
-
-.card {
-	width: 500px;
-	max-height: 600px;
-	/*background: #D8D8D8;*/
-	border: solid black 2px;
-	margin-top: 10px;
-	/*border-radius: 5px;*/
-}
-
-.upper {
+/*general*/
+.welcome {
 	height: 40px;
-	/*background: #BCBCBC;*/
-	border-bottom: solid black 2px;
-	width: 500px;
-	/*border-radius: 5px 5px 0px 0px;*/
-	font-size: 26px;
-	color: black;
-	text-align: left;
+	width: 150px;
+	margin-left: 250px;
+	padding-top: 50px;
+	color: #D8B482 !important;
 }
 
-.upper p {
-	padding-left: 20px;
+.inspirations {
+	height: 40px;
+	width: 150px;
+	margin-left: 250px;
+	padding-top: 50px;
+	color: #BF8E63;
 }
-
-h1 {
-	text-decoration: underline;
-	color: #5179fc;
+.inspirations h1 {
+	color: #BF8E63;
 }
-
-.gifton {
-	
-	/*border: solid black 2px;*/
-	margin-top: 10px;
-	position: relative;
-    color: black;
-}
-.gifton img {
-	width: 490px;
+.content-box {
+	width: 55%;
+	margin: 10px 5px 10px 5px;
+	min-height: 500px;
+	display: inline-grid;
 	padding: 5px;
 }
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 50px;
-    color: gray;
+h1 {
+	font-weight: 600;
+	font-size: 60px;
+	color: #D8B482;
 }
-ul {
-	list-style: none;
-	padding: 15px;
-	color: gray;
+.content-box p {
+	width: 100%;
+	margin: 5%;
+	max-width: 90%;
+	font-size: 22px;
+	color: #f2f2f2;
 }
-li {
+.content-box button {
+	background-color: #6271fc;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	height: 45px;
+	margin: 0 auto;
+	bottom: 0px;
+}
+.content-box button:hover {
+	background-color: #D44746;
+}
+.post-meta {
+  float: right;
+  color: #666666;
+}
+.post-meta, .timestamp {
+  float: right;
+  margin: 0 0 0 16px;
+
+}
+.post-meta a {
+  float: right;
+  color: #999999;
+  text-decoration: none;
+  right: 10px;
+}
+
+/*individual card work*/
+.content-box img {
+	max-width: 425px;
+	max-height: 300px;
+	height: auto;
+	width: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.pairso {
+	background-color: #374159;
+	margin-right: 10px;
+}
+.newgrad {
+	margin-left: 10px;
+	background-color: #374159;
+	margin-top: 200px;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.lg-content-box {
+	margin-top: -100px;
+	background-color: #374159;
+	min-height: 300px;
 	padding: 10px;
+	max-width: 940px;
+	margin-bottom: 10px;
+	background-image: url(https://ws.imgix.net/photos/zn4krr_juriart.jpg?w=1000&dpr=2&auto=compress&q=80&cs=tinysrgb&ixlib=js-1.0.6);
+	background-repeat: no-repeat;
+	background-size: 940px 500px;
+}
+.lg-content-box p {
+	font-size: 9rem;
+	text-align: center;
+	margin: 0 auto;
+}
+.lg-content-box:hover {
+	color: #7DCA81 !important;
+	border: solid #7DCA81 10px; 
 }
 
-#learning a {
-	color: #F8A2A2;
-}
-#kash a {
-	color: #4A8386;
-}
-#book a {
-	color: #F19568;
-}
-#github a {
-	color: #6CC8F0;
-}
-#email a {
-	color: #8C606D;
-}
-a {
-	text-decoration: underline;
+.lower-container {
+	background-color: #D8B482;
+	padding: 10px;
+	position: relative;
+	margin-top: 100px;
 }
 
-.card img {
-	width: 150px;
-	margin-left: 175px;
-	padding: 10px 0px 10px 0px;
-	-webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%);
-}
-
-.charity img {
-	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-}
-
-.about {
-	background-image: url("../img/seattle.svg");
-	width: 500px;
-	height: 500px;
-	
-}
-.about h3 {
-	color: #6271fc;
-}
-
-@media screen and (max-width: 600px){
-	
-	.content-wrapper, .card, .upper {
-		max-width: 95%;
+@media screen and (max-width: 600px) {
+	.content-box, .lg-content-box {
+		min-width: 90% !important;
+	}
+	.container {
+		flex-direction: column;
+	}
+	.welcome, .inspirations {
+		width: 90%;
+		max-height: 400px;
 		margin: 0 auto;
-
+		padding: 10px;
 	}
-	.gifton img {	
-		width: 104%;
+	.content-box img {
+		max-width: 100%
 	}
-	.card {
-		margin-top: 10px;
-	}
-	.card img {
-		margin-left: 80px;
-	}
-	body {
-		overflow-x: hidden;
-	}
-	.about {
-		background: none;
-	}
-	#louis {
-		padding: 10px 10px 10px 10px;
-	}
-}	
-.scene {
-  /* Safari 6.0 - 9.0 */
-  bottom:0;
-  z-index: 100;
-  left:0;
-  overflow:hidden;
-  right:0;
-  height:300px;
-  width: 100%;
-  display: flex;
-  padding-bottom: -10px;
-  }
-.scene > div {
-  position: absolute;
-  bottom:0;
 }
 
-.scene > div.clouds {
-  width:895px;
-  left:50%;
-  margin-left:-447px;
-  height:255px;
-  bottom:290px;
-  background:url(https://github.com/balajmarius/parallax/blob/master/img/clouds.png?raw=true) no-repeat center;
+html {
+	overflow-x: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
